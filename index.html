@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game - Test Your Memory</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="images/simon.ico" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Simon Game</div>
+        <button class="play-now-btn to-game-section">Play Now</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Welcome to Simon</h1>
+        <p>Test your memory and reflexes with this classic game!</p>
+        <button class="cta-btn to-game-section">Start Playing</button>
+      </section>
+
+      <section class="how-to-play">
+        <h2>How to Play</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-icon">👀</div>
+            <h3>Watch</h3>
+            <p>Observe the sequence of colors and sounds</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">🧠</div>
+            <h3>Remember</h3>
+            <p>Memorize the pattern as it gets longer</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">👆</div>
+            <h3>Repeat</h3>
+            <p>Click the colors in the correct order</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">🏆</div>
+            <h3>Score</h3>
+            <p>Reach higher levels and beat your record</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <h2>Game Features</h2>
+        <div class="feature-list">
+          <div class="feature">
+            <h3>Progressive Difficulty</h3>
+            <p>
+              The game becomes more challenging as you advance, keeping you
+              engaged and improving your skills.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Colorful Interface</h3>
+            <p>
+              Enjoy a vibrant and intuitive game board with distinct colors and
+              sounds for each button.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Time Challenge</h3>
+            <p>
+              Test your speed with timed rounds, adding an extra layer of
+              excitement to the game.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Sound Effects</h3>
+            <p>
+              Immerse yourself in the game with satisfying sound effects for
+              each interaction and sequence.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="game-section">
+      <h1 id="top">The Simon Game</h1>
+      <h1 id="level-title">Press Any Key to Start</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div type="button" id="green" class="btn green"></div>
+            <div type="button" id="red" class="btn red"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <div type="button" id="yellow" class="btn yellow"></div>
+            <div type="button" id="blue" class="btn blue"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Simon Game. All rights reserved.</p>
+    </footer>
+    <script src="game.js"></script>
+  </body>
+</html>
